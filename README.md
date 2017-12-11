@@ -15,38 +15,9 @@ http://wdi13projectonejschoenfeld.bitballoon.com/
 
 Spec sheet
 
-Which game am I going to pick?
-
 Connect Four
 
-PROS
-I like arrays
-CSS Grid might make this easier
-CONS
-Harder according to teachers
-Make an AI?
+This game is a 6*7 grid of game pieces that get filled in by alternating players. 
+If either player makes a sequence of game pieces of 4 in a row, column, or diagonal they are declared the victors.
 
-Jeapordy
-
-PROS
-Easier according to WDI12
-Classically enjoyable
-CONS
-Lots of wordiness
-idk
-
-Black Jack
-
-PROS
-
-
-CONS
-
-
-Hangman
-
-PROS
-
-
-CONS
 
