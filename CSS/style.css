@@ -1,3 +1,7 @@
-.container{
+.main{
     display: grid;
+    background-color: gray;
+}
+.gameboard{
+    background-color: papayawhip;
 }
