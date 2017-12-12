@@ -21,7 +21,6 @@ body{
     background-color: papayawhip;
 }
 .lettersRemaining{
-    grid-area: 1, 1, 1, 1;
 }
 .footer{
     height: 5vh;
