@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     background-color: gray;
     text-align: center;
+    font-family: 'Roboto';
 }
 .header{
     height: 7vh;
@@ -20,7 +21,7 @@ body{
     background-color: papayawhip;
 }
 .lettersRemaining{
-    grid-area: 
+    grid-area: 1, 1, 1, 1;
 }
 .footer{
     height: 5vh;
@@ -28,3 +29,5 @@ body{
     text-align: right;
     margin: 3px;
 }
+/* font-weight thin if used and bold if not */
+/* Use the scale-in and scale-out classes to make the letters appear and disappear. */
