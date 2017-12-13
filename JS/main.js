@@ -13,7 +13,7 @@ $(() => {
     $(`.bold`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
-
+        return letterClicked;
     })
     //
     // $('.lettersRemaining').append();
