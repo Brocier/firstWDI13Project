@@ -6,6 +6,9 @@ $(() => {
     // console.log(letters)
 
     //make a click event for letter
+    $(`.letter`).on(`click`, function (event) {
+        console.log(event.data);
+    })
     //use event.target to select the letter I clicked
     //make what letter I clicked console.log
     //
