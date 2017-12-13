@@ -5,22 +5,29 @@ $(() => {
 
     //split up the answer into seperate letters
     const guessSplit = guessWord.split("");
-    console.log(guessSplit)
+    // console.log(guessSplit)
 
+    const guessFinal = guessSplit.map((letter) => {
+        return $('.answer-container').append(`<span class="hidden answer">${letter}</span>`)
+    })
+    // console.log(guessFinal)
     //make a click event that returns the letter clicked
     const guessedLetter = $(`.bold`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
 
-        guessSplit.forEach(element => {
-            if (letterClicked === element) {
-                element.textContent = ''
-            }
-            else {
-                $(event.target).css('color', 'red')
-            }
-            // console.log(element)
-        });
+
+        // indexOf
+        // guessSplit.forEach(element => {
+        if (guessSplit.indexOf(letterClicked) > -1) {
+            console.log("success")
+            // element.textContent = ''
+        }
+        else {
+            $(event.target).css('color', 'red')
+        }
+        // console.log(element)
+        // });
         //make the clickedLetter disappear
         //or become unclickable
         return letterClicked;
@@ -47,7 +54,7 @@ $(() => {
 
 
 
-    $('.answer').text(guessSplit);
+    // $('.answer').append(guessFinal);
     // $('.lettersUsed').append(letters);
 
 
