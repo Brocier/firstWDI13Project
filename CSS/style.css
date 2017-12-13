@@ -23,7 +23,7 @@ html{
     justify-content: space-around;
 }
 
-.lettersRemaining .lettersUsed{
+.lettersRemaining{
     text-transform: uppercase;
     min-width: 25%;
     flex-wrap: wrap;
