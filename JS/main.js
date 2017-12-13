@@ -6,8 +6,10 @@ $(() => {
     // console.log(letters)
 
     //make a click event for letter
-    $(`.letter`).on(`click`, function (event) {
-        console.log(event.data);
+    const guessSplit = guessWord.split("");
+    console.log(guessSplit)
+    $(`.bold`).on(`click`, (event) => {
+        console.log(event.target);
     })
     //use event.target to select the letter I clicked
     //make what letter I clicked console.log
