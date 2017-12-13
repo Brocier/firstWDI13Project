@@ -5,58 +5,25 @@ $(() => {
 
     //split up the answer into seperate letters
     const guessSplit = guessWord.split("");
-    // console.log(guessSplit)
-
+    //map the split letters to divs with the class of 'hidden answer'
     const guessFinal = guessSplit.map((letter) => {
         return $('.answer-container').append(`<span class="hidden answer">${letter}</span>`)
     })
-    // console.log(guessFinal)
+
     //make a click event that returns the letter clicked
-    const guessedLetter = $(`.bold`).on(`click`, (event) => {
+    const guessedLetter = $(`.letter`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
-
-
-        // indexOf
-        // guessSplit.forEach(element => {
         if (guessSplit.indexOf(letterClicked) > -1) {
-            console.log("success")
-            // element.textContent = ''
+            $(event.target).css('font-weight', 'bold')
+            $(event.target).off()
         }
         else {
-            $(event.target).css('color', 'red')
+            $(event.target).css('font-weight', '100')
+            $(event.target).off()
         }
-        // console.log(element)
-        // });
-        //make the clickedLetter disappear
-        //or become unclickable
         return letterClicked;
-
     })
-    //forEach the guessSplit array to see if letterClicked matched any of them?
-    //if it does match, then do something, if it doesn't, leave it.
-    guessSplit.forEach(element => {
-        if (guessedLetter === element) {
-            element.removeClass('hidden')
-        }
-        console.log(element)
-    });
-    // check to see if the letter clicked is in the answer//
-    //
-    // 
-    const letterCheck = (guessedLetter) => {
-        if (guessSplit.indexOf(guessedLetter) >= 0) {
-            return true
-            console.log(`You found something!`)
-        }
-    }
-    letterCheck(guessedLetter);
-
-
-
-    // $('.answer').append(guessFinal);
-    // $('.lettersUsed').append(letters);
-
 
     // test to see if I can merge to master
     /* font-weight thin if used and bold if not */
