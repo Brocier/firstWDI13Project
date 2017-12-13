@@ -1,4 +1,3 @@
-
 $(() => {
     console.log(`let's guess!`)
     const guessWord = `fhqwgads`
@@ -12,13 +11,15 @@ $(() => {
     const guessedLetter = $(`.bold`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
+        console.log(guessSplit.indexOf(letterClicked))
         return letterClicked;
+
     })
 
     // check to see if the letter clicked is in the answer
     // 
     const letterCheck = (guessedLetter) => {
-        if (guessedLetter === guessSplit.indexOf) {
+        if (guessSplit.indexOf(guessedLetter) >= 0) {
             return true
             console.log(`You found something!`)
         }
