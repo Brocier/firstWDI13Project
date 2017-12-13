@@ -12,11 +12,14 @@ $(() => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
 
-        guessSplit.forEach((element) => {
+        guessSplit.forEach(element => {
             if (letterClicked === element) {
-                element.removeClass('hidden');
-            };
-            console.log(element)
+                element.textContent = ''
+            }
+            else {
+                $(event.target).css('color', 'red')
+            }
+            // console.log(element)
         });
         //make the clickedLetter disappear
         //or become unclickable
@@ -44,7 +47,7 @@ $(() => {
 
 
 
-    $('.answer').append(guessSplit);
+    $('.answer').text(guessSplit);
     // $('.lettersUsed').append(letters);
 
 
