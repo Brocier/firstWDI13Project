@@ -32,8 +32,6 @@ html{
     display: flex;
 }
 .letter{
-    border: solid, black, 1px;
-    
     flex-flow: wrap;
 }
 .guessingArea{
