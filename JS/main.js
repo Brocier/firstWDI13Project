@@ -5,14 +5,16 @@ $(() => {
     const letters = [`a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, `i`, `j`, `k`, `l`, `m`, `n`, `o`, `p`, `q`, `r`, `s`, `t`, `u`, `v`, `w`, `x`, `y`, `z`]
     // console.log(letters)
 
-    //make a click event for letter
+    //split up the answer into seperate letters
     const guessSplit = guessWord.split("");
     console.log(guessSplit)
+
+    //make a click event for letter
     $(`.bold`).on(`click`, (event) => {
-        console.log(event.target);
+        const letterClicked = event.target.textContent;
+        console.log(letterClicked);
+
     })
-    //use event.target to select the letter I clicked
-    //make what letter I clicked console.log
     //
     // $('.lettersRemaining').append();
     $('.answer').append(guessWord);
