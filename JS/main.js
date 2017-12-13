@@ -18,9 +18,9 @@ $(() => {
     // check to see if the letter clicked is in the answer
     // 
     const letterCheck = (guessedLetter) => {
-        if (guessedLetter === guessSplit[0]) {
+        if (guessedLetter === guessSplit.indexOf) {
             return true
-            console.log(`You hit A`)
+            console.log(`You found something!`)
         }
     }
     letterCheck(guessedLetter);
