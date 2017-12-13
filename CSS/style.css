@@ -37,6 +37,9 @@ body{
 .guessingArea{
     min-width: 40%;
 }
+.hidden{
+    color: papayawhip;
+}
 .footer{
     height: 5vh;
     flex-shrink: 0;
