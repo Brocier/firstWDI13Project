@@ -11,7 +11,13 @@ $(() => {
     const guessedLetter = $(`.bold`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
-        console.log(guessSplit.indexOf(letterClicked))
+
+        guessSplit.forEach((element) => {
+            if (letterClicked === element) {
+                element.removeClass('hidden');
+            };
+            console.log(element)
+        });
         //make the clickedLetter disappear
         //or become unclickable
         return letterClicked;
@@ -19,7 +25,12 @@ $(() => {
     })
     //forEach the guessSplit array to see if letterClicked matched any of them?
     //if it does match, then do something, if it doesn't, leave it.
-    //
+    guessSplit.forEach(element => {
+        if (guessedLetter === element) {
+            element.removeClass('hidden')
+        }
+        console.log(element)
+    });
     // check to see if the letter clicked is in the answer//
     //
     // 
@@ -33,7 +44,7 @@ $(() => {
 
 
 
-    $('.answer').append(guessWord);
+    $('.answer').append(guessSplit);
     // $('.lettersUsed').append(letters);
 
 
