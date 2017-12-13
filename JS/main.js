@@ -17,6 +17,12 @@ $(() => {
         if (guessSplit.indexOf(letterClicked) > -1) {
             $(event.target).css('font-weight', 'bold')
             $(event.target).off()
+
+            //how I'm getting the letter that matched in the answer.
+            const matchingLetterIndex = guessSplit.indexOf(letterClicked)
+            console.log(guessFinal[matchingLetterIndex]);
+
+            $('span').removeClass('hidden')
         }
         else {
             $(event.target).css('font-weight', '100')

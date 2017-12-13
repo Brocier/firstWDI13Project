@@ -1,6 +1,6 @@
 html{
     height: 100%;
-    font-size: 12pt;
+    font-size: 20pt;
 }
 .main{
     height: 100vh;
@@ -24,13 +24,17 @@ html{
 }
 
 .lettersRemaining{
+    font-size: 30pt;
+    height: 90%;
     text-transform: uppercase;
-    min-width: 25%;
-    flex-wrap: wrap;
-    font-size: 13pt;
+    min-width: 40%;
+    flex-flow: row wrap;
     display: flex;
-    flex-direction: row;
+}
+.letter{
     border: solid, black, 1px;
+    
+    flex-flow: wrap;
 }
 .guessingArea{
     min-width: 40%;
