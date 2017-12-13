@@ -1,5 +1,6 @@
 html{
     height: 100%;
+    font-size: 14pt;
 }
 body{
 }
@@ -16,11 +17,20 @@ body{
     flex-shrink: 0;
 }
 .gameboard{
-    display: grid;
+    display: Flex;
     flex: 1 0 auto; /*css-tricks: Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     background-color: papayawhip;
+    justify-content: space-around;
 }
-.lettersRemaining{
+
+.lettersRemaining .lettersUsed{
+    max-width: 25%;
+    flex-wrap: wrap;
+    font-size: 13pt;
+}
+.guessingArea{
+    min-width: 40%;
+
 }
 .footer{
     height: 5vh;
