@@ -26,11 +26,14 @@ body{
 }
 
 .lettersRemaining .lettersUsed{
+    text-transform: uppercase;
     min-width: 25%;
     flex-wrap: wrap;
     font-size: 13pt;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.bold{
 }
 .guessingArea{
     min-width: 40%;
