@@ -12,11 +12,16 @@ $(() => {
         const letterClicked = event.target.textContent;
         console.log(letterClicked);
         console.log(guessSplit.indexOf(letterClicked))
+        //make the clickedLetter disappear
+        //or become unclickable
         return letterClicked;
 
     })
-
-    // check to see if the letter clicked is in the answer
+    //forEach the guessSplit array to see if letterClicked matched any of them?
+    //if it does match, then do something, if it doesn't, leave it.
+    //
+    // check to see if the letter clicked is in the answer//
+    //
     // 
     const letterCheck = (guessedLetter) => {
         if (guessSplit.indexOf(guessedLetter) >= 0) {
