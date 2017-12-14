@@ -22,7 +22,10 @@ html{
     background-color: papayawhip;
     justify-content: space-around;
 }
-
+.wrong{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
 .lettersRemaining{
     margin: 10%;
     height: 22%;
