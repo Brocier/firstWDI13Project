@@ -44,7 +44,7 @@ html{
 
 }
 .hidden{
-    color: ghostwhite;
+    visibility: hidden;
 }
 .footer{
     /* height: 5vh; */
