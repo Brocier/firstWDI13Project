@@ -13,16 +13,17 @@ $(() => {
     //make a click event that returns the letter clicked
     const guessedLetter = $(`.letter`).on(`click`, (event) => {
         const letterClicked = event.target.textContent;
-        console.log(letterClicked);
+        console.log('letter', letterClicked);
         if (guessSplit.indexOf(letterClicked) > -1) {
             $(event.target).css('font-weight', 'bold')
             $(event.target).off()
 
-            //how I'm getting the letter that matched in the answer.
+            // //how I'm getting the letter that matched in the answer.
             const matchingLetterIndex = guessSplit.indexOf(letterClicked)
-            console.log(guessFinal[matchingLetterIndex]);
+            console.log('matchingLetterIndex', matchingLetterIndex)
+            console.log("guessSplit", guessSplit[matchingLetterIndex]);
 
-            $('span').removeClass('hidden')
+            // $('span').removeClass('hidden')
         }
         else {
             $(event.target).css('font-weight', '100')
