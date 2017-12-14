@@ -24,15 +24,18 @@ html{
 }
 
 .lettersRemaining{
-    font-size: 30pt;
-    height: 90%;
+    margin: 10%;
+    height: 22%;
+    width: 320px;
     text-transform: uppercase;
-    min-width: 40%;
     flex-flow: row wrap;
     display: flex;
 }
-.letter{
+.letter{    
+    font-size: 30pt;
     flex-flow: wrap;
+    height: 40px;
+    padding: 4px;
 }
 .guessingArea{
     min-width: 40%;
