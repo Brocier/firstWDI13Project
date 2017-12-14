@@ -26,7 +26,7 @@ $(() => {
             // $('span').removeClass('hidden')
         }
         else {
-            $(event.target).css('font-weight', '100')
+            $(event.target).css('font-weight', '400')
             $(event.target).off()
         }
         return letterClicked;
